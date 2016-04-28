@@ -29,16 +29,16 @@ Layer Dependencies
 ------------------
 
 URI: git://git.yoctoproject.org/poky
-> branch:   jethro
-> revision: fc45deac89ef63ca1c44e763c38ced7dfd72cbe1
+> branch:   krogoth
+> revision: 856f0648d6ff17088986977fd2414408474090b5
 
 URI: git://git.openembedded.org/meta-openembedded
 > layer:    meta-oe
-> branch:   jethro
-> revision: ad6133a2e95f4b83b6b3ea413598e2cd5fb3fd90
+> branch:   krogoth
+> revision: e027caff5b2476e150eacbb49e57321b6f78a096
 
-Using the above git sha's and the master meta-ivi branch, bitbaking leviathan-image
-is known to work (the leviathan-image build should be aligned with GENIVI 10.0).
+Using the above git sha's and the master meta-ivi branch, bitbaking miranda-image
+is known to work (the miranda-image build should be aligned with GENIVI 11.0).
 
 For creating a specific GENIVI compliant image version, please make sure you
 git checkout the related meta-ivi branch and follow the build instructions
@@ -74,18 +74,18 @@ export TEMPLATECONF=/full/path/to/meta-ivi/meta-ivi/conf
 2. Run the following command:
    > $ source poky/oe-init-build-env
 
-3. Build leviathan-image including GENIVI 10.0 (Leviathan) components
-   > $ bitbake leviathan-image
+3. Build s/w image including GENIVI 11.0 compliance components
+   > $ bitbake miranda-image
 
 4. Run the emulator:
    > for qemu vexpressa9:  
-   > $ PATH_TO_META_IVI/meta-ivi/scripts/runqemu leviathan-image vexpressa9
+   > $ PATH_TO_META_IVI/meta-ivi/scripts/runqemu miranda-image vexpressa9
    >
    > for qemu x86:  
-   > $ PATH_TO_META_IVI/meta-ivi/scripts/runqemu leviathan-image qemux86
+   > $ PATH_TO_META_IVI/meta-ivi/scripts/runqemu miranda-image qemux86
    >
    > for qemu x86-64:  
-   > $ PATH_TO_META_IVI/meta-ivi/scripts/runqemu leviathan-image qemux86-64
+   > $ PATH_TO_META_IVI/meta-ivi/scripts/runqemu miranda-image qemux86-64
 
 5. To login use these credentials:
    > User - root
