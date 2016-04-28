@@ -13,7 +13,7 @@ SRC_URI = " \
     "
 S = "${WORKDIR}/git"
 
-DEPENDS = "glib-2.0 libitzam dlt-daemon"
+DEPENDS = "glib-2.0 dlt-daemon"
 
 inherit autotools-brokensep pkgconfig
 
