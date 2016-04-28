@@ -16,7 +16,7 @@ S = "${WORKDIR}/git"
 
 DEPENDS = "weston"
 
-inherit cmake autotools
+inherit cmake
 
 EXTRA_OECMAKE := "-DWITH_ILM_INPUT=1"
 
