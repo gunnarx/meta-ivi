@@ -1,0 +1,26 @@
+From bc4b12f20d6ab766c9edaec74c80f5ce1a294eb0 Mon Sep 17 00:00:00 2001
+From: Oleksandr Kravchuk <oleksandr.kravchuk@pelagicore.com>
+Date: Sun, 26 Aug 2018 02:24:20 +0200
+Subject: [PATCH] Fix compilation with GCC 8
+
+Signed-off-by: Oleksandr Kravchuk <oleksandr.kravchuk@pelagicore.com>
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index a17d775..a73f0df 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -30,7 +30,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+ 
+ 
+ # Overwrite the build in defaults
+-CFLAGS="-Wall -O -Werror -fstack-protector -pthread -Wformat -Wformat-security -fexceptions -fstrict-aliasing -fno-omit-frame-pointer -Wconversion -D_FORTIFY_SOURCE=2"
++CFLAGS="-Wall -O -Werror -fstack-protector -pthread -Wformat -Wformat-security -fexceptions -fstrict-aliasing -fno-omit-frame-pointer -Wconversion -D_FORTIFY_SOURCE=2 -Wno-format-truncation"
+ 
+ # Checks for programs.
+ AC_PROG_CC
+-- 
+2.17.1
+

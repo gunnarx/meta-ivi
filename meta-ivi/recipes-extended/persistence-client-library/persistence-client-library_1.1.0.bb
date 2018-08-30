@@ -14,6 +14,7 @@ SRC_URI = " \
     git://github.com/GENIVI/${BPN}.git;protocol=https \
     file://0001-fix-exec-path.patch \
     file://0002-load-correct-version-of-libpers_common.patch \
+    file://0001-Fix-compilation-with-GCC-8.patch \
     "
 S = "${WORKDIR}/git"
 
