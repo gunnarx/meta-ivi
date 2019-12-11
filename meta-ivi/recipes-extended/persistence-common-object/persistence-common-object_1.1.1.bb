@@ -18,6 +18,6 @@ DEPENDS = "glib-2.0 glib-2.0-native dlt-daemon libcheck libarchive"
 
 inherit autotools-brokensep pkgconfig
 
-EXTRA_OECONF = " --with-database=key-value-store "
+EXTRA_OECONF = " --with-database=key-value-store --with-dbuspolicydir=/usr/share/dbus-1/system.d "
 
 FILES_${PN} := "${prefix}"
