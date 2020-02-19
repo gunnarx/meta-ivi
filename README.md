@@ -100,17 +100,17 @@ Layer Dependencies
 ------------------
 
 URI: git://git.yoctoproject.org/poky
-> branch:   warrior
-> revision: 2ce6c7b190fc418a5653085f83016b29d52a2ae5
+> branch:   zeus
+> revision: 5e1f52edb7a9f790fb6cb5d96502f3690267c1b1
 
 URI: git://git.openembedded.org/meta-openembedded
 > layer:    meta-oe
-> branch:   warrior
-> revision: a24acf94d48d635eca668ea34598c6e5c857e3f8
+> branch:   zeus
+> revision: bb65c27a772723dfe2c15b5e1b27bcc1a1ed884c
 
 URI: git://git.yoctoproject.org/meta-gplv2
-> branch:   warrior
-> revision: d5d9fc9a4bbd365d6cd6fe4d6a8558f7115c17da
+> branch:   zeus
+> revision: 0f4eecc000f66d114ad258fa31aed66afa292166
 
 Using the above git SHAs and the master meta-ivi branch,
  bitbaking meta-ivi-image is known to work.
